@@ -14,7 +14,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -q build
                     zlib1g-dev libssl-dev git\
                     libudev-dev \
                     mplayer2 \
-                    python3 \
+                    python3 python3-dev \
                     python \
                     python-dev \
                     python-libxml2 \

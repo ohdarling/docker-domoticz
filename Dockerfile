@@ -48,7 +48,7 @@ RUN git clone https://github.com/OpenZWave/open-zwave.git ;\
 
 #Compile Domoticz
 RUN git clone https://github.com/domoticz/domoticz.git domoticz ;\
-    cd domoticz; git checkout master ;/opt/cmake/bin/cmake -J4 -DCMAKE_BUILD_TYPE=Release -DUSE_PYTHON=YES -DPython_ADDITIONAL_VERSIONS=2.7 . ;\
+    cd domoticz; git checkout master ;/opt/cmake/bin/cmake -J4 -DCMAKE_BUILD_TYPE=Release -DUSE_PYTHON=YES -DPython_ADDITIONAL_VERSIONS=3.4 . ;\
     make CMAKE_COMMAND=/opt/cmake/bin/cmake && make CMAKE_COMMAND=/opt/cmake/bin/cmake install &&\
     cd ../ && rm -r domoticz && rm -r /opt/cmake
 

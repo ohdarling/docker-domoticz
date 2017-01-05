@@ -1,6 +1,6 @@
 #name of container: docker-domoticz
 #versison of container: 0.1.0
-FROM debian
+FROM ubuntu:16.04
 MAINTAINER Cyrille Nofficial  "cynoffic@cyrilix.fr"
 
 ENV VERSION=3.5877

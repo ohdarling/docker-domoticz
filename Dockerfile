@@ -52,6 +52,10 @@ RUN git clone https://github.com/domoticz/domoticz.git domoticz ;\
     make CMAKE_COMMAND=/opt/cmake/bin/cmake && make CMAKE_COMMAND=/opt/cmake/bin/cmake install &&\
     cd ../ && rm -r domoticz && rm -r /opt/cmake
 
+# Modify Timezone to Asia/Shanghai
+RUN echo "Asia/Shanghai" > /etc/timezone
+RUN dpkg-reconfigure -f noninteractive tzdata
+
 RUN mkdir -p /opt/domoticz/db/ /opt/domoticz/backup  /scripts /opt/domoticz/db
 VOLUME ["/opt/domoticz/scripts", "/opt/domoticz/backups",  "/opt/domoticz/db"]
 

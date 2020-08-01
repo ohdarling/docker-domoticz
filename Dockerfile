@@ -3,7 +3,8 @@
 FROM debian:jessie
 MAINTAINER Cyrille Nofficial  "cynoffic@cyrilix.fr"
 
-ENV VERSION=3.5877
+# Commit Hash: aad6500
+ENV VERSION=2020.2
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
